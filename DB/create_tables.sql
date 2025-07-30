@@ -160,7 +160,7 @@ CREATE TABLE modules (
 
 CREATE TABLE module_types (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    type ENUM(
+    name ENUM(
         "gun",
         "turret",
         "hull",
