@@ -233,7 +233,7 @@ CREATE TABLE shells (
 
 CREATE TABLE shell_types (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    type ENUM(
+    name ENUM(
         "ap", -- Бронебойные
         "apcr", -- Подкалиберные
         "he", -- Кумулятивные
