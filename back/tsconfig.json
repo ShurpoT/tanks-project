@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "target": "ES2020",
+        "module": "ESNext",
+        "paths": {
+            "~types": ["src/types/index.ts"],
+            "~types/*": ["src/types/*"],
+            "~context": ["src/context.ts"]
+        },
+        "moduleResolution": "Bundler",
+        "strict": true,
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "allowImportingTsExtensions": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "isolatedModules": true,
+        "noEmit": true
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "dist"]
+}
