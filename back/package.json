@@ -3,11 +3,11 @@
     "version": "0.0.1",
     "description": "",
     "type": "module",
-    "main": "dist\\index.js",
+    "main": "dist\\rest-server.ts",
     "scripts": {
         "build": "tsup",
         "dev:build": "tsup --watch --onSuccess \"npm run dev\"",
-        "dev": "concurrently \"nodemon dist\\index.js\" \"nodemon dist\\server.js\""
+        "dev": "concurrently \"nodemon dist\\graphql-server.js\" \"nodemon dist\\rest-server.js\""
     },
     "dependencies": {
         "@apollo/server": "^5.0.0",
