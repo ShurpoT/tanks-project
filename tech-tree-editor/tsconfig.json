@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "target": "esnext",
+        "module": "esnext",
+        "paths": {
+            "~public/*": ["./public/*"],
+            "~app-router": ["src/app-router/*"],
+            "~components/*": ["src/components/*"],
+            "~constants/*": ["src/constants/*"],
+            "~graphql/*": ["src/graphql/*"],
+            "~hooks/*": ["src/hooks/*"],
+            "~store/*": ["src/store/*"],
+            "~styles/*": ["src/styles/*"],
+            "~types": ["src/types/index.ts"],
+            "~types/*": ["src/types/*"],
+            "~utils/*": ["src/utils/*"]
+        },
+
+        "jsx": "react-jsx",
+        "strict": true,
+        "moduleResolution": "bundler",
+        "skipLibCheck": true
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "dist"]
+}
