@@ -232,7 +232,7 @@ export const typeDefs = `#graphql
 
     input TankIdentifierByNation {
             nationId:           ID!
-            tierId:             ID!
+            tierId:             Int!
     }
     
     input TankIdentifierInput {
