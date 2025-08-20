@@ -3,7 +3,7 @@ import { DateTimeResolver } from "graphql-scalars";
 import type { IContext } from "~context";
 import type { Resolvers } from "~types/__generated__";
 
-import { getTanksList, getTanksTree, getTankNation, getTankType, getChildTanks, getTank } from "./resolver-handlers";
+import { getTanksList, getTanksTree, getTankNation, getTankType, getChildTanks, getTank, getNations } from "./resolver-handlers";
 
 export const resolvers: Resolvers<IContext> = {
     DateTime: DateTimeResolver,
@@ -49,6 +49,13 @@ export const resolvers: Resolvers<IContext> = {
          */
         // module: async (parent, args, context) => {
         // },
+
+        /**
+         * Возвращает список наций.
+         *
+         * @returns {TankNation[]} Данные всех наций
+         */
+        nations: getNations,
     },
 
     Tank: {

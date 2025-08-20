@@ -249,6 +249,8 @@ export const typeDefs = `#graphql
 
         modules: [Module!]!
         module(id: ID!): Module
+
+        nations: [TankNation]!
     }
 
 `;

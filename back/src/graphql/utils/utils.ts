@@ -1,4 +1,4 @@
-import type { TankRow } from "~types";
+import type { TankRow, TankNationRow } from "~types";
 
 export const getTankData = (tank: TankRow) => ({
     id: tank.id,
@@ -21,4 +21,14 @@ export const getTankData = (tank: TankRow) => ({
     model3DUrl: tank["3d_model_url"],
     releasedAt: tank.released_at,
     updatedAt: tank.updated_at,
+});
+
+export const getTankNationData = (nation: TankNationRow) => ({
+    id: nation.id,
+    name: nation.name,
+    displayName: nation.display_name,
+    imageFlagUrl: nation.image_flag_url,
+    imageFlagSmallUrl: nation.image_flag_small_url,
+    imageOverlapUrl: nation.image_overlap_url,
+    imageIcoUrl: nation.image_ico_url,
 });

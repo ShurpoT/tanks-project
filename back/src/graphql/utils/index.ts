@@ -1,1 +1,1 @@
-export { getTankData } from "./utils";
+export * from "./utils";
